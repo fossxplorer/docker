@@ -20,7 +20,6 @@ echo "ALL parameters are: ${@}" > /tmp/susin2.txt
 
 #if [[ ${1} == nginx || ${1} == $(type -p nginx) ]]; then
 if [[ -z ${1} ]]; then
-    echo "INSIDE IF: The check for if dollar 1 is true; parameter Dollar 1 is: ${1}" > /tmp/susin3.txt
     #    exec $(type -p nginx)
       $(type -p nginx)
     else
